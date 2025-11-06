@@ -1,6 +1,7 @@
 #include "SlewController.h"
 #include "vex.h"
 #include "robot-config.h"
+#include <algorithm>
 
 //by chatgpt
 
@@ -47,3 +48,4 @@ void SlewController::reset(double value) { current = value; }
 
 
 double SlewController::get() const { return current; }
+
